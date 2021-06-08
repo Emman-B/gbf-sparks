@@ -13,8 +13,13 @@ function do_calculation() {
     const tenDrawsInput = document.getElementById("ten-draws-input");
     const singleDrawsInput = document.getElementById("single-draws-input");
 
-    // debug for now: log the spark calculation (actual thing that should happen is that it shows it to the user)
-    console.log(calculate_sparks(crystalsInput.value, tenDrawsInput.value, singleDrawsInput.value));
+    // do the calculation and store it into an object
+    const results = calculate_sparks(crystalsInput.value, tenDrawsInput.value, singleDrawsInput.value);
+
+    // update the output elements
+    document.getElementById("roll-count-output").textContent = results.total_draws;
+    document.getElementById("needed-rolls-output").textContent = results.draws_to_next_spark;
+    document.getElementById("spark-count-output").textContent = results.total_sparks;
 }
 
 
