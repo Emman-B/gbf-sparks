@@ -18,8 +18,10 @@ function do_calculation() {
 
     // update the output elements
     document.getElementById("roll-count-output").textContent = results.total_draws;
-    document.getElementById("needed-rolls-output").textContent = results.draws_to_next_spark;
     document.getElementById("spark-count-output").textContent = results.total_sparks;
+    document.getElementById("needed-rolls-output").textContent = results.draws_to_next_spark;
+    document.getElementById("needed-crystals-output").textContent = results.crystals_for_next_spark;
+    document.getElementById("needed-ten-draws-output").textContent = results.ten_draws_for_next_spark;
 }
 
 

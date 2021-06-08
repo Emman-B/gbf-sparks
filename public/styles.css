@@ -26,7 +26,12 @@ body {
     max-width: max-content;
 }
 
-.output {
+.outputs {
+    display: flex;
+    flex-direction: column;
+}
+
+.output-div {
     padding: 15px;
     margin: 10px;
     border-radius: 5px;
@@ -34,7 +39,7 @@ body {
     max-width: 220pt;
 }
 
-#roll-count-output, #needed-rolls-output, #spark-count-output {
+.output {
     background-color: #484848;
     border-radius: 5px;
     padding: 15px;
