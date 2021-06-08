@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>GBF Spark Calculator</title>
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="index.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+
+    <body>
+        <!-- All the controls are in this div (such as inputs, and the calculate button) -->
+        <div class="controls">
+            <div class="input-div">
+                <div>Crystals</div>
+                <input class="input" id="crystals-input" type="number" min=0 pattern="\d+"/>
+            </div>
+            <div class="input-div">
+                <div>10-Draw Tickets</div>
+                <input class="input" id="ten-draws-input" type="number" min=0 pattern="\d+"/>
+            </div>
+            <div class="input-div">
+                <div>Single-Draw Tickets</div>
+                <input class="input" id="single-draws-input" type="number" min=0 pattern="\d+"/>
+            </div>
+            <div>
+                <button id="calculate-button" onclick="do_calculation()">Calculate</button>
+            </div>
+        </div>
+
+        <!-- All of the output elements are in this div -->
+        <div class="outputs">
+            <div class="roll-count">
+                <div>Rolls Count</div>
+            </div>
+            <div class="needed-rolls">
+                <div>Number of rolls for next spark</div>
+            </div>
+            <div class="spark-count">
+                <div>Sparks Count</div>
+            </div>
+        </div>
+    </body>
+</html>
